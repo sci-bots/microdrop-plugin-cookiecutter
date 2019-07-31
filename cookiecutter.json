@@ -1,0 +1,15 @@
+{
+    "full_name": "Your name",
+    "email": "Your address email (eq. you@example.com)",
+    "github_username": "Your github username",
+    "github_organization": "",
+    "project_name": "Name of the project",
+    "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "plugin_name": "{{ cookiecutter.package_name.split('.')[-1].replace('-', '_') }}",
+    "project_short_description": "A short description of the project",
+    "project_url": "https://github.com/{{cookiecutter.github_organization or cookiecutter.github_username}}/{{cookiecutter.package_name}}",
+    "license": "BSD",
+    "release_date": "{% now 'local' %}",
+    "version": "0.1.0",
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
