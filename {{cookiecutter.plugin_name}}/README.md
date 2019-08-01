@@ -7,12 +7,12 @@
 Install
 -------
 
-The latest [`{{cookiecutter.project_slug}}` release][1] is available as a
-[Conda][2] package from the [`{{cookiecutter.github_username}}`][2] channel.
+The latest [`{{cookiecutter.package_name}}` release][1] is available as a
+[Conda][2] package from the [`{{cookiecutter.github_organization or cookiecutter.github_username}}`][2] channel.
 
-To install `{{cookiecutter.project_slug}}` in an **activated Conda environment**, run:
+To install `{{cookiecutter.package_name}}` in an **activated Conda environment**, run:
 
-    conda install -c {{cookiecutter.github_username}} -c conda-forge {{cookiecutter.project_slug}}
+    conda install -c {{cookiecutter.github_organization or cookiecutter.github_username}} -c conda-forge {{cookiecutter.package_name}}
 
 -------------------------------------------------------------------------------
 
@@ -52,5 +52,5 @@ Contributors
  - {{cookiecutter.full_name}} ([@{{cookiecutter.github_username}}](https://github.com/{{cookiecutter.github_username}}))
 
 
-[1]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}
-[2]: https://anaconda.org/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}
+[1]: https://github.com/{{cookiecutter.github_organization or cookiecutter.github_username}}/{{cookiecutter.package_name}}
+[2]: https://anaconda.org/{{cookiecutter.github_organization or cookiecutter.github_username}}/{{cookiecutter.package_name}}
